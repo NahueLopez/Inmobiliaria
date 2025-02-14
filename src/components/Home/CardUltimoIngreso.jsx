@@ -14,7 +14,7 @@ function CardUltimoIngreso({ propiedad }) {
         
         <div className="flex justify-between items-center mb-4">
           <p className="text-lg font-bold text-gray-900">{`${propiedad.precio}`}</p>
-          <button className="text-white bg-yellow-300 hover:bg-yellow-500 px-4 py-2 rounded-lg text-sm transition duration-200
+          <button className="text-white bg-yellow-300 shadow-xl hover:cursor-pointer hover:bg-yellow-500 px-4 py-2 rounded-lg text-sm transition duration-200
             opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0">
             Ver más
           </button>

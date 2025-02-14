@@ -42,12 +42,12 @@ function UltimosIngresos() {
 
   return (
     <div className="flex flex-col items-center w-full justify-center mx-auto h-screen">
-      <p className="text-2xl text-start mb-6">Últimos Ingresos</p>
+      <p className="text-2xl text-start mb-6">Propiedades Destacadas</p>
 
       <div className="flex items-center gap-4 w-full max-w-[1200px] px-4">
         <button
           onClick={anterior}
-          className="text-2xl p-2 bg-gray-200 rounded-full hover:bg-gray-300 transition disabled:opacity-50"
+          className="text-2xl p-2 bg-gray-200 rounded-full hover:cursor-pointer hover:bg-gray-300 transition disabled:opacity-50"
           disabled={indexPrincipal === 0}
         >
           <FaChevronLeft />
@@ -63,7 +63,7 @@ function UltimosIngresos() {
             {propiedades.map((propiedad) => (
               <div 
                 key={propiedad.id} 
-                className="w-full sm:w-1/3 lg:w-1/4 p-2 flex-shrink-0"
+                className="w-full sm:w-1/3 lg:w-1/4 p-2 flex-shrink-0 cursor-pointer"
               >
                 <CardUltimoIngreso propiedad={propiedad} />
               </div>
@@ -73,7 +73,7 @@ function UltimosIngresos() {
 
         <button
           onClick={siguiente}
-          className="text-2xl p-2 bg-gray-200 rounded-full hover:bg-gray-300 transition disabled:opacity-50"
+          className="text-2xl p-2 bg-gray-200 rounded-full hover:cursor-pointer hover:bg-gray-300 transition disabled:opacity-50"
           disabled={indexPrincipal === maxIndex}
         >
           <FaChevronRight />

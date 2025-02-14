@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from "react-router-dom"
 import { useState, useEffect } from "react";
 
-import logo from" ../assets/logo.png"
+import logo from "../assets/logo.png"
 
 function NavBar() {
 
@@ -30,10 +30,12 @@ function NavBar() {
             <img src={logo} className="w-[90px] h-[60px]"/>
         </div>
         
+        
+
         <div className='flex gap-x-6'>
             <Link to="/" className=' hover:text-yellow-300'>Inicio</Link>
             <Link to="propiedades" className=' hover:text-yellow-300'>Propiedades</Link>
-            <Link to="sobrenosotros" className=' hover:text-yellow-300'>SobreNosotros</Link>
+            <Link to="sobrenosotros" className=' hover:text-yellow-300'>Sobre Nosotros</Link>
             <Link to="contacto" className=' hover:text-yellow-300'>Contacto</Link>
         </div>
 
